@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
     --black: #000000;
+    --black-19: #191919;
     --white: #ffffff;
     --white-e: #eeeeee;
     --dark: #0D0D0D;
@@ -35,6 +36,15 @@ button {
         display: inline-block;
         border: none;
 }
+.common_btn {
+    border-radius: 1000px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    color: var(--black);
+    padding: 20px 54px;
+}
 
 body {
         background: var(--dark);
@@ -45,7 +55,7 @@ body {
         text-align: center;
         max-width: 820px;
         margin: 0 auto;
-        padding-bottom: 16px;
+        padding-bottom: 40px;
 }
 
 /*=============================================
@@ -139,7 +149,8 @@ nav {
 }
 .banner_content p {
         font-size: 20px;
-        line-height: 1.5;color: var(--white);
+        line-height: 1.5;
+        color: var(--white);
         padding-top: 10px;
         padding-bottom: 40px;
         padding-right: 115px;
@@ -205,7 +216,7 @@ nav {
         color: var(--white-e);
 }
 .about_content p a {
-        font-weight: 700;
+         font-weight: 700;
         color: var(--white);
 }
 .about_content .video {
@@ -234,44 +245,341 @@ nav {
 /*=============================================
         About CSS End
 ================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-        Common CSS Start
-================================================*/
-/*=============================================
-Common CSS Start
-================================================*/
-
-
-
 
 
 /*=============================================
-                XYZ Start
+        delicious_menu CSS Start
+================================================*/
+#delicious_menu {
+        padding: 150px 0;
+}
+.menus {}
+.menus ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+}
+.menus ul li {
+        border-bottom: 3px solid var transparent;
+        border-radius: 0 0 10px 10px;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 8px 20px;
+        cursor: pointer;
+        transition: all linear 0.3s;
+}
+.menus ul li.active {
+        border-bottom: 3px solid var(--white);
+
+}
+.menus ul li:hover {
+        border-bottom: 3px solid var(--white);
+}
+.food_item_grid {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding-top: 80px;
+}
+.food_item_grid .item {
+        background: var(--black-19);
+        padding: 20px;
+        border-radius: 10px;
+        width: calc(33.33% - 20px);
+}
+.food_item_grid .item .images {
+        height: 236px;
+        overflow: hidden;
+}
+.food_item_grid .item text {}
+.food_item_grid .item text h3 {}
+.food_item_grid .item text p {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+.food_item_grid .item .text .price_and_cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+}
+.food_item_grid .item .text .price_and_cart .price {}
+.food_item_grid .item .text .price_and_cart .cart {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.see_all {
+        display: flex;
+        justify-content: center;
+} 
+.see_all a {
+        margin-top: 30px;
+        border-radius: 1000px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--white);
+        color: var(--black);
+        padding: 20px 54px;
+} 
+.see_all a img {} 
+/*=============================================
+        delicious_menu CSS End
+================================================*/
+
+
+/*=============================================
+        Counter CSS Start
+================================================*/
+#counter {
+        padding-top: 150px;
+}
+.counter {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-top: 20px;
+}
+.counter .count_item {
+        width: calc(25% - 22.5px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+}
+.counter .count_item h3 {
+        color: var(--white);
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.5;
+        padding-bottom: 10px;
+}
+.counter .count_item p {
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+}
+/*=============================================
+        Counter CSS End
+================================================*/
+
+
+/*=============================================
+        Adventure CSS Start
+================================================*/
+#adventure {
+        padding-top: 150px;
+}
+.adventure_text {
+          margin-top: -20px;
+          text-align: center;
+}
+.adventure_text p {
+        padding-bottom: 60px;
+        font-size: 18px;
+        color: var(--white);
+        text-align: center;
+}
+/*=============================================
+        Adventure CSS Start
+================================================*/
+
+
+/*=============================================
+        Testimonial CSS Start
+================================================*/
+#testimonial {
+        padding: 150px 0;
+}
+.testimonial_box {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding-top: 30px;
+}
+.testimonial_box .item {
+        padding: 20px;
+        background: var(--black-19);
+        border-radius: 16px;
+        width: calc(33.33% - 20px);
+}
+.testimonial_box .item .client {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        /* padding-bottom: 20px; */
+}
+.testimonial_box .item .client .image {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.testimonial_box .item .client .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.testimonial_box .item .client .client_info {
+
+}
+
+.testimonial_box .item .client .client_info h4 {
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.5;
+}
+.testimonial_box .item .client .client_info p {
+        color: var(--white-e);
+        opacity: 0.7;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 8px;
+}
+.testimonial_box .item .icon {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        position: relative;
+}
+.testimonial_box .item .icon::after {
+        content: "";
+        width: 195px;
+        height: 1px;
+        background: var(--white);
+        position: absolute;
+        top: 59%;
+        opacity: .7;
+        z-index: 100;
+        left: 20px 
+}
+/*=============================================
+        Testimonial CSS End
+================================================*/
+
+
+/*=============================================
+        contact CSS Start
+================================================*/
+#contact {
+        background: white;
+        padding: 80px 0;
+}
+#contact .section_header h2 {
+        color: var(--black);
+}
+.contact_form {
+        max-width: 748px;
+        margin: 0 auto;
+        display: flex;
+        gap: 20px;
+}
+.contact_form input {
+        border-radius: 1000px;
+        padding: 10px;
+        border: 1px solid var(--black);
+        flex: 1;
+        display: block;
+}
+.contact_form button {
+        background: var(--black);
+        color: var(--white);
+}
+/*=============================================
+        contact CSS End
+================================================*/
+
+
+/*=============================================
+                Location CSS Start
+================================================*/
+#location {
+        padding: 150px 0;
+}
+.location_container {
+        display: flex;
+        gap: 145px;
+        justify-content: center;
+        align-items: center;
+}
+.location_container .section_header {
+        text-align: left;
+}
+.location_container .text p {
+        padding-bottom: 70px;
+        font-size: 20px;
+        line-height: 1.5;
+        color: var(--white);
+}
+.location_container .map iframe {
+        border-radius: 12px;
+}
+/*=============================================
+                Location CSS End
 ================================================*/
 /*=============================================
-                XYZ End
+                Footer CSS Start
+================================================*/
+footer {
+        padding: 80px 0;
+        background: var(--black-19);
+}
+.footer_content {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+}
+/* .footer_content .item {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+} */
+.footer_content .item h3 {
+        color: var(--white);
+        font-size: 24px;
+        line-height: 1;
+        padding-bottom: 30px;
+}
+.footer_content .item ul li {
+        margin-bottom: 24px;
+}
+.footer_content .item ul li:last-child {
+        margin-bottom: 0px;
+}
+.footer_content .item ul li a{
+        font-size: 18px;
+        line-height: 1.5;
+        color: var(--white);
+}
+.payment_image {
+        width: 210px;
+}
+.payment_image img {
+        width: 100%;
+}
+.footer_bottom_side {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        border-top: 1px solid #4f4f4f;
+}
+.footer_bottom_side .social_link {
+        display: flex;
+        gap: 12px;
+}
+/*=============================================
+                Footer CSS End
 ================================================*/
